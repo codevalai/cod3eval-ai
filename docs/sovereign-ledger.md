@@ -1,0 +1,3 @@
+# Ledger Design Status
+
+There is no ledger, signing service, post-quantum implementation, hardware attestation, or block explorer in this repository. The project makes no claim of quantum resistance, tamper-proof storage, or verified hardware identity. Any future implementation must specify its algorithms, key lifecycle, verification procedure, threat model, and test vectors before making security claims.
