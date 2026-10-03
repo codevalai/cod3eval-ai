@@ -55,3 +55,7 @@ The valuation workbench and API are an early functional slice. No economic total
 ## Development
 
 Run `npm install` followed by `npm run dev` to start the API and web console. Use `npm test`, `npm run typecheck`, and `npm run build` for the project checks. See [docs/architecture.md](docs/architecture.md), [docs/valuation.md](docs/valuation.md), and [docs/api.md](docs/api.md) for implementation details and limitations.
+
+## Preview Deployment
+
+[`render.yaml`](render.yaml) defines a single-service Render preview for `feat/valuation-workbench-foundation`. The service builds the web console and serves it alongside the API; `/api/health` is the health check. To provision the preview, connect the GitHub repository through Render's Blueprint flow and authorize repository access. Render account access is not configured in this workspace, so the service must be created from the Render dashboard.
