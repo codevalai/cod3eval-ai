@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cod3eval-preview
+    runtime: node
+    plan: free
+    branch: feat/valuation-workbench-foundation
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_ENV
+        value: production
